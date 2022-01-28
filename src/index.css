@@ -1,13 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&family=Rubik:wght@400;600&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,h2,h3,h4,h5 {
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 16px 0 16px 0;
+}
+
+h1,h2,h3 {
+  font-family: "Rubik", sans-serif;
+}
+
+h4,h5 {
+  font-family: "Public Sans", sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p, li {
+  font-family: "Public Sans", sans-serif;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+/* em {
+  font-style: normal;
+  content: "";
+  background-image: url("./Images/swish.svg");
+  background-size: 100% 100%;
+}
+
+strong {
+  font-weight: inherit;
+  display: inline-block;
+  background-image: url(./Images/underline.svg);
+  background-position: 0 1em;
+  background-repeat: repeat-x;
+  background-size: 100% 5px;
+} */
+
+/* BUTTONS */
+button {
+  border-radius: 2px;
+  padding: 17px 32px;
+  margin: 16px 4px 4px 4px;
+}
+
+.btn_orange_outline {
+  background-color: #f7f7f7;
+  border: 1px solid #fe7c1b;
+  color: #fe7c1b;
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+}
+
+.btn_orange_fill {
+  border: 1px solid #fe7c1b;
+  background: #fe7c1b;
+  color: #f7f7f7;
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+}
+
+.btn_white_outline {
+  background-color: transparent;
+  border: 1px solid #f7f7f7;
+  color: #f7f7f7;
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* COLOURS */
+
+.darkgreen {
+  color: #00383d;
+}
+
+.green {
+  color: #00525e;
+}
+
+.orange {
+  color: #fe7c1b;
+}
+
+.white {
+  color: #f7f7f7;
+}
+
+.grey {
+  color: #535353;
 }

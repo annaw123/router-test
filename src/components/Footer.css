@@ -1,0 +1,40 @@
+div.first-row,
+div.second-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div.first-row {
+  height: 60px;
+  background-color: #00383d;
+}
+
+div.second-row {
+  height: 40px;
+  background-color: #0d4247;
+}
+
+div.first-row a,
+div.second-row p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  margin-left: 40px;
+  margin-right: auto;
+}
+
+div.second-row p {
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+ul {
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+ul img {
+  margin-right: 15px;
+  height: 18px;
+}

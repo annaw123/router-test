@@ -1,0 +1,69 @@
+.step {
+    position: relative;
+    min-height: 1em;
+    color: #00383D;
+    margin-top: 1.5em;
+}
+  
+.title {
+    line-height: 2em;
+    font-weight: bold;
+    font-family: 'Rubik';
+}
+
+.step > div:first-child {
+    position: static;
+    height: 0;
+}
+
+.step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+}
+
+/* Circle */
+.circle {
+    background: #fff;
+    border: 3px solid #00383D;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    line-height: 1.5em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0 3px #fff;
+}
+
+/* Vertical Line */
+.circle:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 1px;
+    right: 50%;
+    bottom: 1px;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    transform: scale(1, 2);
+    transform-origin: 50% -100%;
+    background-color: #00383D;
+    z-index: -1; /*gives space between line and circle */
+}
+
+.step:last-child .circle:after {
+    display: none
+}
+
+.step.step-active {
+    color: #FE7C1B;
+}
+.step.step-active .circle {
+    background-color: #FE7C1B;
+    border: 3px solid #FE7C1B;
+} 
+
+.step.step-active .circle:after {
+    background-color: #FE7C1B;
+}

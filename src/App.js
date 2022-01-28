@@ -1,7 +1,7 @@
-// import Navbar from './Components/Navbar';
-// import Header from './Components/Header';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 // import Tutorial from './Components/Tutorial';
-// import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 
 // import "./App.css";
 
@@ -22,17 +22,13 @@ import "./index.css";
 export default function App() {
   return (
     <div>
-      <h1>Mission Encodeable</h1>
-      <p>It won't be this ugly for long, we promise!</p>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem"
-        }}
-      >
+      <Navbar />
+      <Header />
+      <nav>
         <Link to="/courses">Courses</Link>
       </nav>
       <Outlet />
+      <Footer />
     </div>
   );
 }
